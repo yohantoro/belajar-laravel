@@ -1,3 +1,10 @@
+<?php 
+/**
+ * Layout Utama 
+ * 
+ * Penggunaannya bisa menggunakan sintaks blade @extends('layouts.main')
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +24,7 @@
     </style>
 </head>
 <body>
+    {{-- navbar menu --}}
     <nav class="navbar">
         <ul class="menu">
             <li>
@@ -30,6 +38,9 @@
             </li>
         </ul>
     </nav>
+    
+    {{-- sintaks blade @yield di bawah ini berfungsi sebagai tempat untuk menampilkan konten/output --}}
     @yield('content')
+
 </body>
 </html>
